@@ -23,6 +23,7 @@
 body {
     position: relative;
     background: #222;
+    overflow: hidden;
 }
 
 /*!--Welcome Page--!*/
