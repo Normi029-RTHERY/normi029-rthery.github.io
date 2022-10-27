@@ -4,6 +4,13 @@
     font-weight: normal;
 }
 
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     --wlcm-grad-l: var(--wlcm-grad-l);
     --wlcm-grad-r: var(--wlcm-grad-r);
@@ -21,9 +28,6 @@
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
     position: relative;
     background: #222;
 }
