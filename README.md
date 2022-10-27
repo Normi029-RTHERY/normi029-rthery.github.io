@@ -1,1 +1,1 @@
-[ici](/main.html)
+[ici](./main.html)
