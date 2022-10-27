@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'LemonMilk';
+    src: url(./assets/fonts/lemon_milk/LEMONMILK-Regular.otf);
+    font-weight: normal;
+}
+
+:root {
+    --wlcm-grad-l: var(--wlcm-grad-l);
+    --wlcm-grad-r: var(--wlcm-grad-r);
+    font-size: 16px;
+    font-family: 'LemonMilk';
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body {
+    position: relative;
+    background: #222;
+}
+
+/*!--Welcome Page--!*/
+
+.welcomepage {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.welcometickbox {
+    display: none;
+}
+
+.textbox {
+    width: fit-content;
+    text-align: center;
+    background: linear-gradient(to right, var(--wlcm-grad-l), var(--wlcm-grad-r));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    overflow: hidden;
+}
+
+/*!--Header--*/
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: red;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*!--Main--*/
+
+@keyframes openingAnimation {
+    to {
+        clip-path: circle(100% at 50% 50%);
+    }
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    clip-path: circle(0% at 50% 50%);
+    background: #111;
+}
+
+
+/*!--Footer--*/
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    background-color: hsla(0, 0%, 100%, 0.5);
+}
+
+.footer_links {
+    padding: 1em;
+}
