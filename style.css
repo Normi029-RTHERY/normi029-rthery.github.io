@@ -32,6 +32,10 @@ body {
     background: #222;
 }
 
+a{
+    text-decoration: none;
+}
+
 /*!--Welcome Page--!*/
 
 .welcomepage {
@@ -59,11 +63,16 @@ body {
 /*!--Header--*/
 
 header {
-    position: fixed;
-    width: 100%;
-    background-color: red;
-    margin: 0;
-    padding: 0;
+    position: absolute;
+    top: 0;
+    display: flex;
+    gap: 3em;
+    font-size: large    ;
+}
+
+.header_links {
+    width: 5em;
+    padding: 1.5em;
 }
 
 
