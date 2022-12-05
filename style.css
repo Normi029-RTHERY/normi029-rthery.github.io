@@ -14,6 +14,11 @@
 :root {
     --wlcm-grad-l: var(--wlcm-grad-l);
     --wlcm-grad-r: var(--wlcm-grad-r);
+    --wlcm-bg-color: hsl(0, 0%, 10%);
+    --main-bg-color: hsl(0, 0%, 6%);
+    --hder-bg-color: hsl(0, 0%, 10%);
+    --hder-shdw-color: hsl(0, 0%, 2%);
+
     font-size: 16px;
     font-family: 'LemonMilk';
 }
@@ -29,7 +34,7 @@
 
 body {
     position: relative;
-    background: #222;
+    background: var(--wlcm-bg-color);
     overflow-x: hidden;
 }
 
@@ -64,8 +69,8 @@ header {
     width: 110vw;
     display: flex;
     font-size: 1.2em;
-    background-color: #222;
-    box-shadow: 0 .3em .5em #111;
+    background-color: var(--hder-bg-color);
+    box-shadow: 0 .3em .5em var(--hder-shdw-color);
     transform: translateX(-5vw);
 }
 
@@ -103,7 +108,7 @@ header {
 main {
     min-height: 100vh;
     clip-path: circle(0% at 50% 50%);
-    background: #333;
+    background: var(--main-bg-color);
 }
 
 
