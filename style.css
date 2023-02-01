@@ -16,8 +16,6 @@
     --wlcm-grad-r: var(--wlcm-grad-r);
     --wlcm-bg-color: hsl(0, 0%, 10%);
     --main-bg-color: hsl(0, 0%, 6%);
-    --hder-bg-color: hsl(0, 0%, 10%);
-    --hder-shdw-color: hsl(0, 0%, 2%);
 
     font-size: 16px;
     font-family: 'LemonMilk';
@@ -69,8 +67,6 @@ header {
     width: 110vw;
     display: flex;
     font-size: 1.2em;
-    background-color: var(--hder-bg-color);
-    box-shadow: 0 .3em .5em var(--hder-shdw-color);
     transform: translateX(-5vw);
 }
 
@@ -111,6 +107,10 @@ main {
     background: var(--main-bg-color);
 }
 
+.PP{
+    width: 36%;
+    mix-blend-mode: lighten;
+}
 
 /*!--Footer--*/
 
