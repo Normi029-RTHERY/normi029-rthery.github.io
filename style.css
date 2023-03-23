@@ -44,6 +44,7 @@ body {
     height: 100vh;
     display: grid;
     place-items: center;
+    overflow: hidden;
 }
 
 .welcometickbox {
@@ -58,6 +59,11 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     overflow: hidden;
+}
+
+.textbox h2{
+    font-size: 2rem;
+    font-weight: 200;
 }
 
 /*!--Header--*/
@@ -107,7 +113,7 @@ main {
     background: var(--main-bg-color);
 }
 
-.PP{
+.PP {
     width: 36%;
     mix-blend-mode: lighten;
 }
