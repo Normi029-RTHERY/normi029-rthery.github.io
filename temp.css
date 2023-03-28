@@ -5,7 +5,7 @@
 }
 
 :root {
-    font-size: 16px;
+    font-weight: 16px;
 }
 
 *,
@@ -19,21 +19,24 @@ body {
     margin-block: 5rem;
     background-color: #070707;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    min-width: 600px;
 }
 
 main {
     display: grid;
-    row-gap: 2rem;
-    padding-inline: 10rem;
+    row-gap: 2em;
+    max-width: 80vw;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 1.5rem;
     color: #ececec;
     font-size: 2rem;
     line-height: 1;
-    margin-bottom: 1.5rem;
 }
 
 .btn {
@@ -63,21 +66,22 @@ main {
     padding: 2.3rem;
     background-color: #ececec;
     border-radius: 1rem;
+    min-width: fit-content;
 }
 
 .project h2 {
-    grid-column: span 2;
     font-family: LemonMilk;
     padding: .5rem 0 1rem 3rem;
 }
 
 .content {
     display: flex;
-    flex-wrap: row;
+    gap: 2rem;
 }
 
 .p-caption {
     padding: 2rem;
+    min-width: 16rem;
     text-align: justify;
     background-color: #b6bbc9;
     border-radius: .7rem;
@@ -96,7 +100,7 @@ main {
 
 .slideshow-container {
     position: relative;
-    margin-right: 2rem;
+    max-height: min-content;
 }
 
 .NOT {
@@ -108,7 +112,7 @@ main {
 }
 
 .LG {
-    min-width: 32em;
+    min-width: 32rem;
 }
 
 .slide-NOT,
