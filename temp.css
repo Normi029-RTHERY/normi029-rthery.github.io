@@ -16,8 +16,7 @@
 }
 
 body {
-    margin: 5rem;
-    margin-inline: 10rem;
+    margin-block: 5rem;
     background-color: #070707;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
@@ -25,9 +24,10 @@ body {
 main {
     display: grid;
     row-gap: 2rem;
+    padding-inline: 10rem;
 }
 
-header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,7 +50,7 @@ header {
     text-decoration: none;
 }
 
-.btn *{
+.btn * {
     margin-inline: .5rem;
 }
 
@@ -174,4 +174,18 @@ header {
     to {
         background-position: center;
     }
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    font-size: 1.5rem;
+    height: 2rem;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    padding: .5rem;
+    color: white;
+    background-color: rgba(196, 0, 0, 0.925);
 }
