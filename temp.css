@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'LemonMilk';
+    src: url(./assets/fonts/lemon_milk/LEMONMILK-Regular.otf);
+    font-weight: normal;
+}
+
+:root {
+    font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 5rem;
+    margin-inline: 10rem;
+    background-color: #070707;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    display: grid;
+    row-gap: 2rem;
+}
+
+.project {
+    padding: 2rem;
+    background-color: #ececec;
+    border-radius: 1rem;
+}
+
+.project h2 {
+    grid-column: span 2;
+    font-family: LemonMilk;
+    padding: .5rem 0 1rem 2rem;
+}
+
+.content {
+    display: flex;
+    flex-wrap: row;
+}
+
+.p-caption {
+    padding: 2rem;
+    text-align: justify;
+    background-color: #b2b9c4;
+    border-radius: .7rem;
+}
+
+.slideshow-container {
+    position: relative;
+    margin-right: 2rem;
+}
+
+.NOT {
+    min-width: 40rem;
+}
+
+.errance {
+    min-width: 55rem;
+}
+
+.LG {
+    min-width: 32em;
+}
+
+.slide-NOT,
+.slide-errance,
+.slide-LG {
+    display: none;
+    min-height: 55vh;
+    background-position: center;
+    background-size: cover;
+    border-radius: .7rem;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 14px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    user-select: none;
+}
+
+.slide-caption {
+    position: absolute;
+    bottom: 0;
+    padding-block: .5em;
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #ffffff;
+    background-color: rgba(10, 10, 10, 40%);
+    border-radius: 0 0 .5rem .5rem;
+}
+
+.slide-credit {
+    margin-left: .2rem;
+    font-size: small;
+}
+
+.prev,
+.next {
+    position: absolute;
+    bottom: 0;
+    width: auto;
+    padding-block: .6rem;
+    padding-inline: 1rem;
+    color: rgba(255, 255, 255, 50%);
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    transition: 150ms ease-in-out;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:hover,
+.next:hover {
+    color: rgba(255, 255, 255, 90%);
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 400ms;
+}
+
+@keyframes fade {
+    from {
+        background-position: left center;
+    }
+
+    to {
+        background-position: center;
+    }
+}
