@@ -78,7 +78,7 @@ main {
 .p-caption {
     padding: 2rem;
     text-align: justify;
-    background-color: #b2b9c4;
+    background-color: #b6bbc9;
     border-radius: .7rem;
 }
 
@@ -121,12 +121,14 @@ main {
 }
 
 .numbertext {
-    color: #f2f2f2;
-    font-size: 14px;
-    padding: 8px 12px;
+    color: white;
+    font-size: .9rem;
+    padding: .7rem .8rem;
     position: absolute;
     top: 0;
     user-select: none;
+    background-color: rgba(10, 10, 10, 20%);
+    border-radius: .7rem 0 .7rem 0;
 }
 
 .slide-caption {
@@ -139,7 +141,7 @@ main {
     justify-content: center;
     font-size: 1.1rem;
     font-style: italic;
-    color: #ffffff;
+    color: white;
     background-color: rgba(10, 10, 10, 40%);
     border-radius: 0 0 .7rem .7rem;
 }
