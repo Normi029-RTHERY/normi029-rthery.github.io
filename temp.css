@@ -30,9 +30,10 @@ main {
 .header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     color: #ececec;
     font-size: 2rem;
+    line-height: 1;
+    margin-bottom: 1.5rem;
 }
 
 .btn {

@@ -1,5 +1,6 @@
+
 let slideIndex = [1, 1, 1];
-/* Class the members of each slideshow group with different CSS classes */
+
 let slideId = ["slide-NOT", "slide-errance", "slide-LG"]
 showSlides(1, 0);
 showSlides(1, 1);
