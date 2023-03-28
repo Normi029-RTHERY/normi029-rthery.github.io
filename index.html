@@ -5,37 +5,220 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Romain THERY">
-    <title>Marc-Romain</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
+    <title>RThéry Portfolio</title>
+    <link rel="stylesheet" href="temp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-    <div class="welcomepage noselect">
-        <label class="welcomelabel">
-            <input type="checkbox" class="welcometickbox" onclick="animateOpening()">
-            <div class="textbox">
-                <h1>Bienvenue !</h1>
-                <h2>Cliquez pour commencer</h2>
-            </div>
-        </label>
-    </div>
-
     <main>
-        <header>
-            <div class="headelement" id="homebutton"></div>
-            <div class="headelement" id="headlinks">
-                <a href="./projects.html" class="navlink">Projects</a>
-                <a href="./contact.html" class="navlink">Contact</a>
-                <a href="./aboutme.html" class="navlink">About Me</a>
-            </div>
-            <div class="headelement" id="globalsettings"></div>
+        <div class="header">
+            <h1>THÉRY Romain - Portfolio</h1>
+            <a href="./assets/RomainTHERY_CV_fr.pdf" target="_blank" class="btn">
+                <p>Curriculum Vitae</p>
+                <svg data-name="Livello 1" id="Livello_1" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+                    <title />
+                    <path
+                        d="M61.88,93.12h0a3,3,0,0,0,.44.36l.24.13a1.74,1.74,0,0,0,.59.24l.25.07h0a3,3,0,0,0,1.16,0l.26-.08.3-.09a3,3,0,0,0,.3-.16l.21-.12a3,3,0,0,0,.46-.38L93,66.21A3,3,0,1,0,88.79,62L67,83.76V3a3,3,0,0,0-6,0V83.76L39.21,62A3,3,0,0,0,35,66.21Z" />
+                    <path
+                        d="M125,88a3,3,0,0,0-3,3v22a9,9,0,0,1-9,9H15a9,9,0,0,1-9-9V91a3,3,0,0,0-6,0v22a15,15,0,0,0,15,15h98a15,15,0,0,0,15-15V91A3,3,0,0,0,125,88Z" />
+                </svg>
+            </a>
+        </div>
+        <div class="project">
+            <h2>La nature du temps</h2>
+            <div class="content">
+                <div class="slideshow-container NOT">
+                    <div class="slide-NOT fade" style="background-image: url(./assets/projects/temp/NOT_0.webp);">
+                        <div class="numbertext">1 / 4</div>
+                        <div class="slide-caption">État de l'animation à environ 10%</div>
+                    </div>
+                    <div class="slide-NOT fade" style="background-image: url(./assets/projects/temp/NOT_1.webp);">
+                        <div class="numbertext">2 / 4</div>
+                        <div class="slide-caption">État de l'animation à environ 25%</div>
+                    </div>
+                    <div class="slide-NOT fade" style="background-image: url(./assets/projects/temp/NOT_2.webp);">
+                        <div class="numbertext">3 / 4</div>
+                        <div class="slide-caption">État de l'animation à environ 50%</div>
+                    </div>
+                    <div class="slide-NOT fade" style="background-image: url(./assets/projects/temp/NOT_3.webp);">
+                        <div class="numbertext">4 / 4</div>
+                        <div class="slide-caption">État de l'animation à environ 80%</div>
+                    </div>
+                    <a class="prev" onclick="changeSlide(-1,0)">&#10094;</a>
+                    <a class="next" onclick="changeSlide(1,0)">&#10095;</a>
+                </div>
+                <div class="p-caption">
+                    <h4>Décembre - Février 2021</h4>
+                    <br>
+                    <p>Ce projet est une animation de huit heures réalisée grâce à Processing, un langage
+                        basé sur Java développé dans le but de faciliter la création d'art génératif et procédural.
+                        L'animation était
+                        destinée à être projetée lors des journées portes ouvertes de l'ENSAAMA en 2021 afin de
+                        présenter la
+                        section numérique.L'intention première
+                        était de confronter le spectateur à la durée des choses : ici, au temps que prennent les êtres
+                        vivants pour grandir, se développer mais dans une pensée plus globale, aux choses que nous
+                        sommes
+                        amenés à faire
+                        que ce soit ponctuellement ou fréquemment.
+                    </p>
+                    <br>
+                    <p>J'ai pris le parti d'utiliser exclusivement des primitives
+                        géométriques
+                        et la
+                        génération procédurale plutot que d'importer des images créées avec un logiciel tiers. Je
+                        trouvais
+                        cela
+                        à la
+                        fois plus intéressant et stimulant puisqu'il n'y aurait eu aucun réel avantage à utiliser un
+                        environnement
+                        de
+                        programmation plutôt qu'AfterEffects par exemple.</p>
+                    </p>
 
-        </header>
-        <div>
-            <img src="./assets/PPPro.webp" alt="" class="PP">
+                    <br>
+                    <h5>Processing (Java)</h5>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <h2>Errance</h2>
+            <div class="content">
+                <div class="slideshow-container errance">
+                    <div class="slide-errance fade"
+                        style="background-image:url(./assets/projects/temp/errance_etroitesse.webp)">
+                        <div class="numbertext">1 / 3</div>
+                        <div class=" slide-caption">Étroitesse</div>
+                    </div>
+                    <div class="slide-errance fade"
+                        style="background-image:url(./assets/projects/temp/errance_ouverture.webp)">
+                        <div class="numbertext">2 / 3</div>
+                        <div class="slide-caption">Ouverture</div>
+                    </div>
+                    <div class="slide-errance fade"
+                        style="background-image:url(./assets/projects/temp/errance_profondeur.webp)">
+                        <div class="numbertext">3 / 3</div>
+                        <div class="slide-caption">Profondeur</div>
+                    </div>
+                    <a class="prev" onclick="changeSlide(-1,1)">&#10094;</a>
+                    <a class="next" onclick="changeSlide(1,1)">&#10095;</a>
+                </div>
+                <div class="p-caption">
+                    <h4>Novembre - Janvier 2022</h4>
+                    <br>
+                    <p>Cette série d’animations est un prétexte à la rencontre, un moyen, à
+                        travers l’image, de donner l’envie, l’envie de se rencontrer. Dans ces animations nous suivrons
+                        deux
+                        sujets qui n’ont rien en commun, dont les chemins ne se sont jamais croisés et pourtant ils vont
+                        se rencontrer. Alors que sans aucun but ils errent entre le tout et le rien, ils se croiseront.
+                        Ce sujet permet d’exposer l’immense valeur qu’ont le hasard, le destin ou la
+                        chance, et la malchance aussi, dans notre vie à tous. Ces courts films montrent que parfois la
+                        plus petite desdécisions, le moindre changement, le plus insignifiant des événements peut tout
+                        changer.</p>
+                    <p> Enfin, la
+                        notion
+                        clé
+                        de ces créations tournées autour de l’errance est l'inconnu : qu’est-ce que l’errance si ce
+                        n’est
+                        aller
+                        sans
+                        même savoir où ? Les deux sujets seront soumis à l’inconnu tout au long de l’animation et
+                        n’auront
+                        que
+                        très
+                        peu,
+                        voire pas du tout, de contrôle sur ce à quoi ils seront confrontés.
+                    </p>
+                    <br>
+                    <h5>Conception et animation 3D (Blender), Arrangement son et Montage vidéo (After
+                        Effects,
+                        Premiere)</h5>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <h2>Loup-Garou de Thiercenum</h2>
+            <div class="content">
+                <div class="slideshow-container LG">
+                    <div class="slide-LG fade" style="background-image: url(./assets/projects/temp/LG_0.webp);">
+                        <div class="numbertext">1 / 7</div>
+                        <div class="slide-caption">
+                            <p>Carte du pyromane</p>
+                            <p class="slide-credit"> - Aristide Soulié</p>
+                        </div>
+                    </div>
+                    <div class="slide-LG fade" style="background-image: url(./assets/projects/temp/LG_1.webp);">
+                        <div class="numbertext">2 / 7</div>
+                        <div class="slide-caption">
+                            <p>Photomontage avant illustrations</p>
+                            <p class="slide-credit"> - Aristide Soulié</p>
+                        </div>
+                    </div>
+                    <div class="slide-LG fade" style="background-image: url(./assets/projects/temp/LG_2.webp);">
+                        <div class="numbertext">3 / 7</div>
+                        <div class="slide-caption">
+                            <p>Photo non retouchée</p>
+                            <p class="slide-credit"> - Aristide Soulié</p>
+                        </div>
+                    </div>
+                    <div class="slide-LG fade" style="background-image: url(./assets/projects/temp/LG_3.webp);">
+                        <div class="numbertext">4 / 7</div>
+                        <div class="slide-caption">
+                            <p>Carte de la voyante</p>
+                            <p class="slide-credit"> - Jacqueline Trinh</p>
+                        </div>
+                    </div>
+                    <div class="slide-LG fade" style="background-image: url(./assets/projects/temp/LG_4.webp);">
+                        <div class="numbertext">5 / 7</div>
+                        <div class="slide-caption">
+                            <p>Photo non retouchée</p>
+                            <p class="slide-credit"> - Jacqueline Trinh</p>
+                        </div>
+                    </div>
+                    <div class="slide-LG fade" style="background-image: url(./assets/projects/temp/LG_5.webp);">
+                        <div class="numbertext">6 / 7</div>
+                        <div class="slide-caption">
+                            <p>Carte de la Gourgandine</p>
+                            <p class="slide-credit"> - Romain Théry</p>
+                        </div>
+                    </div>
+                    <div class="slide-LG fade" style="background-image: url(./assets/projects/temp/LG_6.webp);">
+                        <div class="numbertext">7 / 7</div>
+                        <div class="slide-caption">
+                            <p>Photomontage avant illustrations</p>
+                            <p class="slide-credit"> - Romain Théry</p>
+                        </div>
+                    </div>
+                    <a class="prev" onclick="changeSlide(-1,2)">&#10094;</a>
+                    <a class="next" onclick="changeSlide(1,2)">&#10095;</a>
+                </div>
+                <div class="p-caption">
+                    <h4>Septembre 2022</h4>
+                    <br>
+                    <p>Quoi de mieux pour une photo de classe que de reprendre le concept d'un jeux où
+                        l'on
+                        s'entretue ? Le
+                        Loup-Garou
+                        de Thiercenum est evidemment repris du Loup-Garou de Thiercelieux, jeux de rôle où les
+                        villageois
+                        doivent
+                        démasquer les Loup-Garous avant qu'ils ne se fassent tous dévorer. L'application du modèle du
+                        jeux sur
+                        le
+                        principe de la photo de classe fut presque instinctive, châque étudiant endosserait un rôle et
+                        aurait
+                        une
+                        carte
+                        à son effigie.
+                    </p>
+                    <br>
+                    <h5>Photo, Photo-montage (Photoshop), Illustration (Krita)</h5>
+                </div>
+            </div>
         </div>
     </main>
-</body>
+    <footer>Page temporaire, site principal en cours de maintenance</footer>
+    <script src="temp.js"></script>
 
-</html>
+</body>
