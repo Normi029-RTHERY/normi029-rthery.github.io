@@ -59,7 +59,7 @@ main {
 }
 
 .project {
-    padding: 2rem;
+    padding: 2.3rem;
     background-color: #ececec;
     border-radius: 1rem;
 }
@@ -80,6 +80,17 @@ main {
     text-align: justify;
     background-color: #b2b9c4;
     border-radius: .7rem;
+}
+
+.p-caption h4 {
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.p-caption h5 {
+    text-align: end;
+    margin-left: auto;
+    max-width: 22rem;
 }
 
 .slideshow-container {
