@@ -16,7 +16,6 @@
 }
 
 .noselect {
-    -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
     -moz-user-select: none;
@@ -45,7 +44,7 @@ main {
     margin-bottom: 1.5rem;
     color: #ececec;
     font-size: 2rem;
-    line-height: 1;
+    line-height: 1.1;
 }
 
 .header h1 {
@@ -143,6 +142,20 @@ main {
     border-radius: .7rem;
 }
 
+.fade {
+    animation: fade 300ms ease-in-out;
+}
+
+@keyframes fade {
+    from {
+        margin-left: auto;
+    }
+
+    to {
+        margin-left: 0;
+    }
+}
+
 .numbertext {
     color: white;
     font-size: .9rem;
@@ -193,20 +206,6 @@ main {
 .prev:hover,
 .next:hover {
     color: rgba(255, 255, 255, 90%);
-}
-
-.fade {
-    animation: fade 300ms ease-in;
-}
-
-@keyframes fade {
-    from {
-        margin-left: auto;
-    }
-
-    to {
-        margin-left: 0;
-    }
 }
 
 footer {

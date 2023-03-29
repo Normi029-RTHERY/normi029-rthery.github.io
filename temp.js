@@ -16,10 +16,7 @@ function showSlides(n, no) {
     if (n > x.length) { slideIndex[no] = 1 }
     if (n < 1) { slideIndex[no] = x.length }
     for (i = 0; i < x.length; i++) {
-        setTimeout(() => {
-            x[i].style.display = "none";
-        }, 300);
-
+        x[i].style.display = "none";
     }
     x[slideIndex[no] - 1].style.display = "block";
 } 
