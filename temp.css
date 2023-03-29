@@ -15,6 +15,15 @@
     padding: 0;
 }
 
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 body {
     background-color: #070707;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
@@ -108,7 +117,7 @@ main {
 
 .slideshow-container {
     position: relative;
-    max-height: min-content;
+    flex: 1;
 }
 
 .NOT {
@@ -139,7 +148,6 @@ main {
     padding: .7rem .8rem;
     position: absolute;
     top: 0;
-    user-select: none;
     background-color: rgba(10, 10, 10, 20%);
     border-radius: .7rem 0 .7rem 0;
 }
@@ -174,7 +182,6 @@ main {
     color: rgba(255, 255, 255, 50%);
     font-weight: bold;
     cursor: pointer;
-    user-select: none;
     transition: 150ms ease-in-out;
 }
 
