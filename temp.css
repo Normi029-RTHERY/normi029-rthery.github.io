@@ -32,7 +32,7 @@ body {
 }
 
 main {
-    margin-top: 5rem;
+    margin-block: 5rem;
     display: grid;
     row-gap: 2rem;
     max-width: 80vw;
@@ -118,25 +118,26 @@ main {
 .slideshow-container {
     position: relative;
     flex: 1;
+    min-height: 55vh;
 }
 
 .NOT {
-    min-width: 40rem;
+    aspect-ratio: 4/3;
 }
 
 .errance {
-    min-width: 55rem;
+    aspect-ratio: 16/9;
 }
 
 .LG {
-    min-width: 32rem;
+    aspect-ratio: 1;
 }
 
 .slide-NOT,
 .slide-errance,
 .slide-LG {
     display: none;
-    min-height: 55vh;
+    height: 100%;
     background-position: center;
     background-size: cover;
     border-radius: .7rem;
@@ -195,17 +196,16 @@ main {
 }
 
 .fade {
-    animation-name: fade;
-    animation-duration: 400ms;
+    animation: fade 300ms ease-in;
 }
 
 @keyframes fade {
     from {
-        background-position: left center;
+        margin-left: auto;
     }
 
     to {
-        background-position: center;
+        margin-left: 0;
     }
 }
 
