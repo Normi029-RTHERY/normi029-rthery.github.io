@@ -33,18 +33,19 @@
 body {
     position: relative;
     background: var(--wlcm-bg-color);
-    overflow-x: hidden;
 }
 
 /*!--Welcome Page--!*/
 
 .welcomepage {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
+    width: 100svw;
     height: 100vh;
-    display: grid;
-    place-items: center;
-    overflow: hidden;
+    height: 100svh;
 }
 
 .welcometickbox {
@@ -52,16 +53,14 @@ body {
 }
 
 .textbox {
-    width: fit-content;
     text-align: center;
     background: linear-gradient(to right, var(--wlcm-grad-l), var(--wlcm-grad-r));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    overflow: hidden;
 }
 
-.textbox h2{
+.textbox h2 {
     font-size: 2rem;
     font-weight: 200;
 }
@@ -70,10 +69,9 @@ body {
 
 header {
     position: absolute;
-    width: 110vw;
+    width: 100vw;
     display: flex;
     font-size: 1.2em;
-    transform: translateX(-5vw);
 }
 
 .headelement {
