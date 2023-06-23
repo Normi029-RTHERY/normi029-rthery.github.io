@@ -1,8 +1,4 @@
-@font-face {
-    font-family: 'LemonMilk';
-    src: url(./assets/fonts/lemon_milk/LEMONMILK-Regular.otf);
-    font-weight: normal;
-}
+@import url('fonts.css');
 
 :root {
     font-weight: 16px;
@@ -82,7 +78,7 @@ main {
 }
 
 .project h2 {
-    font-family: LemonMilk;
+    font-family: 'LemonMilk';
     padding: .5rem 0 1rem 3rem;
 }
 
