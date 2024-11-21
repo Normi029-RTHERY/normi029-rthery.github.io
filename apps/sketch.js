@@ -17,7 +17,7 @@ function windowResized() {
 }
 
 function draw() {
-  background(30, 30, 30, 50);
+  background(20, 50);
 
   let xoff = 0;
   for (let x = 0; x < cols + scl; x++) {
@@ -30,7 +30,7 @@ function draw() {
       vectors[i] = v;
 
       // show vectors
-      stroke(255);
+      stroke(255, 50);
       strokeWeight(0.5);
       push();
       translate(x * scl, y * scl);
@@ -43,5 +43,5 @@ function draw() {
     xoff += inc;
   }
   zoff += 0.005;
-  // print(frameRate());
+  print(frameRate());
 }
